@@ -7,7 +7,7 @@ def prime?(n)
   range.map {|i|
     n % i == 0 ? i : nil
   }
-  if range.size == 2 && range.sort[-1] == n
+  if range.size == 2
     true
   else
     false
