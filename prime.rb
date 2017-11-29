@@ -3,14 +3,11 @@ require "benchmark"
 require "bigdecimal/math"
 
 def prime?(n)
-  if n == 0
+  if n > 0
+    12 **(n-12) % n == 0
+    return true
+  elsif n == 0
     return false
-  end
-  else 12 **(n-12) % n == 0
-  true
-else
-  false
-end
 end
 
 
