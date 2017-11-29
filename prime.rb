@@ -8,7 +8,7 @@ def prime?(n)
     n % i == 0 ? i : nil
   }
   range.length == 2 && range.any? {|d| d == nil
-  } ? true : false 
+  } ? true : false
   
 end
 puts Benchmark.measure { BigMath.PI(10_000)}
