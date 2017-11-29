@@ -1,5 +1,4 @@
 # Add  code here!
-require 'benchmark'
 
 def prime?(n)
   divisble_by = []
