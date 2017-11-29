@@ -1,6 +1,5 @@
 # Add  code here!
 require 'benchmark'
-require 'bigdecimal/math'
 
 # calculate pi to 10k digits
 
