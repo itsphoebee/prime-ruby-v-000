@@ -3,16 +3,9 @@ require "benchmark"
 require "bigdecimal/math"
 
 def prime?(n)
-  x = n.abs
-  (2..x/2).none?{|i| x % i == 0}
-end
-
-
-#Researched method
-#def prime?(n)
-#   range = (2..n/2).to_a
-#   n > 1 && range.none? { |i| n % i ==0}
-# end
+   range = (2..n/2).to_a
+   n > 1 && range.none? { |i| n % i ==0}
+ end
 
 
 #initial code
