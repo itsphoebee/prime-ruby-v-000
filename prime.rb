@@ -8,6 +8,7 @@ def prime?(n)
     if n % i == 0
       divisble_by << i
     else nil
+    end
   }
   divisble_by.size == 2 ? true : false
 end
