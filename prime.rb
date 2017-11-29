@@ -5,12 +5,9 @@ require "bigdecimal/math"
 def prime?(n)
   range = (1..n).to_a
   range.map {|i|
-    n % i == 0 ? i : nil
+    n % i == 0 ? i
   }
-  if range.length == 2
-    true
-  else
-    false
-  end
+  range.length == 2 ? true : false 
+  
 end
 puts Benchmark.measure { BigMath.PI(10_000)}
