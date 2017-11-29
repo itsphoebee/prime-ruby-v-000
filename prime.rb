@@ -3,7 +3,7 @@ require "benchmark"
 require "bigdecimal/math"
 
 def prime?(n)
-  (2..n/2).none?{|i| n % i == 0}
+  (2..n.abs/2).none?{|i| n.abs % i == 0}
 end
 
 
