@@ -10,3 +10,4 @@ def prime?(n)
 divisble_by.size == 2 ? true : false
 
 end
+puts Benchmark.measure { BigMath.PI(10_000)}
