@@ -5,7 +5,7 @@ require "bigdecimal/math"
 def prime?(n)
   range = (1..n).to_a
   range.each {|i|
-    n % i == 0 ? ran << i : nil
+    n % i == 0 ? range << i : nil
   }
 range.size == 2 ? true : false
 
