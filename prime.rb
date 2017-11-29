@@ -6,5 +6,5 @@ def prime?(n)
       divisble_by << i
     end
   }
-
+return divisble_by
 end
