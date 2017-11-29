@@ -5,7 +5,7 @@ require "bigdecimal/math"
 def prime?(n)
   range = (1..n).to_a
   range.map {|i|
-    n % i == 0 ? divisble_by << i : nil
+    n % i == 0
   }
 range.size == 2 ? true : false
 
