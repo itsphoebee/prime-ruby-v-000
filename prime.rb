@@ -11,5 +11,6 @@ def prime?(n)
     true
   else
     false
+  end
 end
 puts Benchmark.measure { BigMath.PI(10_000)}
