@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(n)
-  (1..n).to_a.map {|i|
+  (1..n).to_a.each {|i|
     if n % i == 0
     end
   }
