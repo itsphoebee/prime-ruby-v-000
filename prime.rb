@@ -12,5 +12,5 @@ def prime?(n)
     end
   }
 divisble_by.size == 2 ? true : false
-benchmark.bm
+
 end
