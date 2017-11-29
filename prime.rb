@@ -3,7 +3,6 @@ require 'benchmark'
 require 'bigdecimal/math'
 
 # calculate pi to 10k digits
-puts Benchmark.measure { BigMath.PI(10_000) }
 
 def prime?(n)
   divisble_by = []
@@ -13,5 +12,5 @@ def prime?(n)
     end
   }
 divisble_by.size == 2 ? true : false
-
+benchmark.bm
 end
