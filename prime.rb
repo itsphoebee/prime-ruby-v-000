@@ -2,14 +2,15 @@
 require "benchmark"
 require "bigdecimal/math"
 
-def prime?(n)
-  if n.abs > 0
-    12 **(n.abs-12) % n.abs == 0
-    return true
-  elsif n == 0
+def prime? (n)
+  for d in 2..(n - 1)
+   if (n % d) == 0
     return false
-end
-end
+   end
+  end
+
+  true
+ end
 
 
 #Researched method
