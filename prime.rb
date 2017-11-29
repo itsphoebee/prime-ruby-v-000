@@ -3,7 +3,7 @@ require "benchmark"
 require "bigdecimal/math"
 
 def prime?(n)
-  if n > 0
+  if n.abs > 0
     12 **(n-12) % n == 0
     return true
   elsif n == 0
