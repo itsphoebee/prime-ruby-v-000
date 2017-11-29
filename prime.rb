@@ -4,7 +4,7 @@ require "bigdecimal/math"
 
 def prime?(n)
   if n.abs > 0
-    12 **(n-12) % n == 0
+    12 **(n.abs-12) % n == 0
     return true
   elsif n == 0
     return false
