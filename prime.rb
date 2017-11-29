@@ -2,7 +2,7 @@
 require "benchmark"
 require "bigdecimal/math"
 
-def prime(n)
+def prime?(n)
   x=n.abs
   (2..x/2).none?{|i| x % i == 0}
 end
