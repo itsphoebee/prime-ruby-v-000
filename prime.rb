@@ -6,6 +6,6 @@ def prime?(n)
       divisble_by << i
     end
   }
-divisble_by.length > 2 ? false : true
+divisble_by.size == 2 ? true : false
 
 end
