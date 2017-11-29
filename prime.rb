@@ -4,10 +4,12 @@ require "bigdecimal/math"
 
 def prime?(n)
   range = (1..n).to_a
-  range.each {|i|
-    n % i == 0 ? range << i : nil
+  range.map {|i|
+    n % i == 0 ? i : nil
   }
-range.size == 2 ? true : false
-
+  if range.size == 2 && range.sort[-1] == n
+    true
+  else
+    false
 end
 puts Benchmark.measure { BigMath.PI(10_000)}
