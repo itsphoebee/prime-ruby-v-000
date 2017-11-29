@@ -3,7 +3,7 @@ require "benchmark"
 require "bigdecimal/math"
 
 def prime?(n)
-  if 12 **(n-1) == 1
+  if 12 **(n-1) % n == 1
   true
 else
   false
