@@ -7,7 +7,7 @@ def prime?(n)
   range.map {|i|
     n % i == 0 ? i
   }
-  range.length == 2 ? true : false 
-  
+  range.length == 2 ? true : false
+
 end
 puts Benchmark.measure { BigMath.PI(10_000)}
