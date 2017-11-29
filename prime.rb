@@ -3,11 +3,9 @@ require "benchmark"
 require "bigdecimal/math"
 
 def prime?(n)
-  divisble_by = []
-  (1..n).to_a.each {|i|
-    n % i == 0 ? divisble_by << i : nil
-  }
-divisble_by.size == 2 ? true : false
+   range = (2..n/2).to_a
+   n > 1 && range.none? { |i| n % i ==0}
+ end
 
-end
+
 puts Benchmark.measure { BigMath.PI(10_000)}
