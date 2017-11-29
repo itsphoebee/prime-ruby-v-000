@@ -1,8 +1,6 @@
 # Add  code here!
 require 'benchmark'
 
-# calculate pi to 10k digits
-
 def prime?(n)
   divisble_by = []
   (1..n).to_a.each {|i|
