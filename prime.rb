@@ -5,7 +5,9 @@ require "bigdecimal/math"
 def prime?(n)
   divisble_by = []
   (1..n).to_a.each {|i|
-    n % i == 0 ? divisble_by << i : nil
+    if n % i == 0
+      divisble_by << i
+    else nil
   }
   divisble_by.size == 2 ? true : false
 end
