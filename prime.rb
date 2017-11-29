@@ -5,6 +5,7 @@ require "bigdecimal/math"
 def prime?(n)
   if n == 0
     return false
+  end
   else 12 **(n-12) % n == 0
   true
 else
