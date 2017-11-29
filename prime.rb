@@ -4,7 +4,7 @@ require "bigdecimal/math"
 
 def prime?(n)
   divisble_by =(2..n/2).to_a
-  divisble_by.none?{|i| x % i == 0}
+  divisble_by.none?{|i| n % i == 0}
 end
 
 
